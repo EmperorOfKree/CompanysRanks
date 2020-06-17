@@ -3,11 +3,20 @@
 This is a simple API built with Flask framework and PostgreSQL database.
 
 ## Preparing the ambient to run it
-1. Install [Python 3.7+](https://www.python.org/downloads/)
+1. Download and install [Python 3.7+](https://www.python.org/downloads/)
    * Make sure to have the command __python__ working in your _terminal/cmd_
    * Make sure to have __PIP__ working as well!
 
-2. In yout _terminal/cmd_ change the folder to the Server project root;
-   * run `pip install -r requirements.txt`;
+2. In your _terminal/cmd_ change the folder to the Server project root;
+   * Run `pip install -r requirements.txt`;
    
-
+3. Download and install [PostgreSQL 9.5+](https://www.postgresql.org/download/);
+   * (Windows) Make sure to have your PostgresSQL added in your enviroment variables;
+   * In your _terminal/cmd_, run `pg_restore --clean -U postgres --dbname companiesranks ./database/companiesranks.psql`;
+   
+## To run the API you'll need to set some enviroments:
+* Run `export FLASK_APP=app.py`;  
+* Run `export FLASK_ENV=development`;  
+* On Windows cmd, you'll have to use `set` instead of `export`;  
+* Then, to start the aplication you can run `flask run --host 0.0.0.0 --port 5000`;  
+* If you have the 'make tool' working, then you just need to run `make run` in the project root folder;  
