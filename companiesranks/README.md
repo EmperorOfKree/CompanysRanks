@@ -24,4 +24,4 @@ To assemble this project, please follow the steps below:
 `flutter run`           -> it run the aplication;  
 `flutter pub get`       -> it compile all the dependences;  
 `flutter doctor`        -> It run a diagnose of your flutter installation and display a report of the status of it;  
-`flutter create <name>` -> It creates a new project with the inputed <name>.
+`flutter create <name>` -> It creates a new project with the inputed `<name>`.
