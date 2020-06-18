@@ -20,3 +20,9 @@ This is a simple API built with Flask framework and PostgreSQL database.
 * On Windows cmd, you'll have to use `set` instead of `export`;  
 * Then, to start the aplication you can run `flask run --host 0.0.0.0 --port 5000`;  
 * If you have the 'make tool' working, then you just need to run `make run` in the project root folder;  
+
+## APIs breakdown
+* `/companies` -> This GET endpoint returns all the companies available in the database;  
+* `/company_reports/<company_id>` -> this GET endpoing returns a list of the performed calculations from a specific company;   
+* `/companiesNames` -> This GET endpoint returns the list of company's names;  
+* `/importData` -> This POST endpoint receives a .csv file and reads it in order to update the company score.
