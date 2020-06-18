@@ -178,4 +178,4 @@ def get_infos_file(request, company_id, company_score, company_receipts, company
     return company_receipts, company_debts, company_score, error
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False, port=5000)
